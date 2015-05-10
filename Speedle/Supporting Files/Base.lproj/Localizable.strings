@@ -1,0 +1,56 @@
+/****************************************************************************/
+/* Localization file */
+
+
+"Sign In Failed" = "Sign In Failed";
+"Please try again later" = "Please try again later";
+"Something went wrong" = "Something went wrong";
+"Session Error" = "Session Error";
+"Your current session is no longer valid. Please log in again." = "Your current session is no longer valid. Please log in again.";
+"Please retry.\n\nIf the problem persists contact us and mention this error code: %@" = "Please retry.\n\nIf the problem persists contact us and mention this error code: %@";
+"Are you sure you want to Log Out?" = "Are you sure you want to Log Out?";
+"Cancel" = "Cancel";
+"Log Out" = "Log Out";
+"now" = "now";
+"Success" = "Success";
+"Link copied to clipboard" = "Link copied to clipboard";
+"Choose account to proceed" = "Choose account to proceed";
+"Post" = "Post";
+"YES" = "YES";
+"NO" = "NO";
+"The ad will not be saved" = "The ad will not be saved";
+"Are you sure?" = "Are you sure?";
+"Google+" = "Google+";
+"Twitter" = "Twitter";
+"Choose from Library" = "Choose from Library";
+"Facebook" = "Facebook";
+"Take Photo" = "Take Photo";
+"Share this advertisement" = "Share this advertisement";
+"Choose Ad Picture" = "Choose Ad Picture";
+"Yes" = "Yes";
+"Mark this ad inappropriate?" = "Mark this ad inappropriate?";
+"Mark Inappropriate" = "Mark Inappropriate";
+"Copy" = "Copy";
+"Select Categories" = "Select Categories";
+"Send Email" = "Send Email";
+"Call" = "Call";
+"Search" = "Search";
+"Uploading photo" = "Uploading photo";
+"Privacy Policy" = "Privacy Policy";
+"Error loading" = "Error loading";
+"No internet connection" = "No internet connection";
+"Remove" = "Remove";
+"Posting" = "Posting";
+"No internet connection. Tap to reload" = "No internet connection. Tap to reload";
+"Location services is disabled" = "Location services is disabled";
+"OK" = "OK";
+"Save" = "Save";
+"Your ads will be displayed here" = "Your ads will be displayed here";
+"SELECT A CATEGORY TO SEARCH" = "SELECT A CATEGORY TO SEARCH";
+"Your favourite ads will be displayed here" = "Your favourite ads will be displayed here";
+"There are no ads to show in this location" = "There are no ads to show in this location";
+"Remove Ad" = "Remove Ad";
+"Terms of Service" = "Terms of Service";
+"Description" = "Description";
+"Not You?" = "Not You?";
+"By tapping to continue, you indicating that you have read the Privacy Policy and agree to the Terms of Service" = "By tapping to continue, you indicating that you have read the Privacy Policy and agree to the Terms of Service";

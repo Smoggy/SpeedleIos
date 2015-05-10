@@ -1,0 +1,21 @@
+
+/* Class = "IBUILabel"; text = "Username"; ObjectID = "IXH-XX-C8J"; */
+"IXH-XX-C8J.text" = "Användarnamn";
+
+/* Class = "IBUILabel"; text = "364d"; ObjectID = "O3b-rn-ovb"; */
+"O3b-rn-ovb.text" = "364d";
+
+/* Class = "IBUIButton"; normalTitle = "$123.45"; ObjectID = "O59-sr-kQt"; */
+"O59-sr-kQt.normalTitle" = "$123.45";
+
+/* Class = "IBUILabel"; text = "Category"; ObjectID = "TSZ-2c-8jp"; */
+"TSZ-2c-8jp.text" = "Kategori";
+
+/* Class = "IBUILabel"; text = "Price"; ObjectID = "hwe-7T-C6H"; */
+"hwe-7T-C6H.text" = "Pris";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "sTK-SY-IeT"; */
+"sTK-SY-IeT.normalTitle" = "Knapp";
+
+/* Class = "IBUILabel"; text = "Advert Title"; ObjectID = "xKZ-ZU-bzk"; */
+"xKZ-ZU-bzk.text" = "Annonstitel";

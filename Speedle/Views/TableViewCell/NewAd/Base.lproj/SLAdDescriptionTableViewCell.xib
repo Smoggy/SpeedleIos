@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SLAdDescriptionInfoTableViewCell" rowHeight="200" id="ytb-FF-F0r" customClass="SLAdDescriptionTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ytb-FF-F0r" id="XvO-DF-45O">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6qF-Uh-FGI">
+                        <rect key="frame" x="15" y="0.0" width="570" height="131"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <action selector="textFieldDidChange:" destination="ytb-FF-F0r" eventType="editingChanged" id="dDZ-GC-prp"/>
+                        </connections>
+                    </textField>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fVz-JZ-iKP" customClass="SLTextView">
+                        <rect key="frame" x="15" y="0.0" width="570" height="131"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="textColor" red="0.34901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="_layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="_isMandatory" value="YES"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Description"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="delegate" destination="ytb-FF-F0r" id="qO4-3K-Mc7"/>
+                        </connections>
+                    </textView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LiI-DU-PhZ">
+                        <rect key="frame" x="15" y="139" width="570" height="45"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="KZi-8j-wGy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                        <state key="normal" title="Preview">
+                            <color key="titleColor" red="0.2666666667" green="0.62352941179999999" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="_layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="_layer.borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="previewButtonPressed:" destination="ytb-FF-F0r" eventType="touchUpInside" id="xS2-g6-mrH"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LiI-DU-PhZ" firstAttribute="top" secondItem="6qF-Uh-FGI" secondAttribute="bottom" constant="8" id="2JI-52-NJC"/>
+                    <constraint firstAttribute="bottom" secondItem="LiI-DU-PhZ" secondAttribute="bottom" constant="15" id="6cz-jS-aOg"/>
+                    <constraint firstItem="LiI-DU-PhZ" firstAttribute="top" secondItem="fVz-JZ-iKP" secondAttribute="bottom" constant="8" id="FYH-S5-P2l"/>
+                    <constraint firstItem="LiI-DU-PhZ" firstAttribute="leading" secondItem="XvO-DF-45O" secondAttribute="leading" constant="15" id="c8g-4T-vK4"/>
+                    <constraint firstItem="fVz-JZ-iKP" firstAttribute="leading" secondItem="XvO-DF-45O" secondAttribute="leading" constant="15" id="ctG-Ln-lBy"/>
+                    <constraint firstItem="fVz-JZ-iKP" firstAttribute="top" secondItem="XvO-DF-45O" secondAttribute="top" id="f6k-Kq-CYr"/>
+                    <constraint firstAttribute="trailing" secondItem="LiI-DU-PhZ" secondAttribute="trailing" constant="15" id="gXs-X1-MRz"/>
+                    <constraint firstItem="6qF-Uh-FGI" firstAttribute="top" secondItem="XvO-DF-45O" secondAttribute="top" id="lsT-Gd-nXq"/>
+                    <constraint firstAttribute="trailing" secondItem="fVz-JZ-iKP" secondAttribute="trailing" constant="15" id="pCE-nK-shN"/>
+                    <constraint firstAttribute="trailing" secondItem="6qF-Uh-FGI" secondAttribute="trailing" constant="15" id="uJb-s1-nYk"/>
+                    <constraint firstItem="6qF-Uh-FGI" firstAttribute="leading" secondItem="XvO-DF-45O" secondAttribute="leading" constant="15" id="ynY-IS-O0V"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="blankTextField" destination="6qF-Uh-FGI" id="ljk-AJ-8Po"/>
+                <outlet property="descriptionTextView" destination="fVz-JZ-iKP" id="MQH-2Y-CrZ"/>
+                <outlet property="previewButton" destination="LiI-DU-PhZ" id="kKz-1d-eYE"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

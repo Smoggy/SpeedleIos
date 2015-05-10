@@ -1,0 +1,56 @@
+/****************************************************************************/
+/* Localization file */
+
+
+"Sign In Failed" = "Попытка входа не удалась";
+"Please try again later" = "Пожалуйста, попробуйте еще раз";
+"Something went wrong" = "Неизвестная ошибка";
+"Session Error" = "Ошибка сессии";
+"Your current session is no longer valid. Please log in again." = "Ваша сессия более не активна. Пожалуйста, войдите снова";
+"Please retry.\n\nIf the problem persists contact us and mention this error code: %@" = "Пожалуйста, повторите попытку.\n\nЕсли ошибка повторяется, свяжитесь с нами и укажите код ошибки: %@";
+"Are you sure you want to Log Out?" = "Вы уверены, что хотите выйти?";
+"Cancel" = "Отмена";
+"Log Out" = "Выйти";
+"now" = "только что";
+"Success" = "Готово";
+"Link copied to clipboard" = "Ссылка скопирована в буфер обмена";
+"Choose account to proceed" = "Выберите аккаунт, чтобы продолжить";
+"Post" = "Готово";
+"YES" = "ДА";
+"NO" = "НЕТ";
+"The ad will not be saved" = "Объявление не будет сохранено";
+"Are you sure?" = "Вы уверены?";
+"Google+" = "Google+";
+"Twitter" = "Twitter";
+"Choose from Library" = "Выбрать из библиотеки";
+"Facebook" = "Facebook";
+"Take Photo" = "Сфотографировать";
+"Share this advertisement" = "Поделиться";
+"Choose Ad Picture" = "Выбрать фото для объявления";
+"Yes" = "Да";
+"Mark this ad inappropriate?" = "Пожаловаться на это объявление?";
+"Mark Inappropriate" = "Пожаловаться";
+"Copy" = "Скопировать";
+"Select Categories" = "Выбрать категории";
+"Send Email" = "Отправить Email";
+"Call" = "Позвонить";
+"Search" = "Поиск";
+"Uploading photo" = "Загрузка фото";
+"Privacy Policy" = "Политику Конфиденциальности";
+"Error loading" = "Ошибка загрузки";
+"No internet connection" = "Отсутствует интернет соединение";
+"Remove" = "Удалить";
+"Posting" = "Публикация";
+"No internet connection. Tap to reload" = "Нет доступа к интернету. Нажмите, чтобы перезагрузить.";
+"Location services is disabled" = "Служба геолокации отключена";
+"OK" = "OK";
+"Save" = "Сохранить";
+"Your ads will be displayed here" = "Ваши объявления появятся здесь";
+"SELECT A CATEGORY TO SEARCH" = "ВЫБЕРИТЕ КАТЕГОРИЮ ПОИСКА";
+"Your favourite ads will be displayed here" = "Ваши избранные объявления появятся здесь";
+"There are no ads to show in this location" = "Нет объявлений для отображения в этой локации";
+"Remove Ad" = "Удалить объявление";
+"Terms of Service" = "Условиями Использования";
+"Description" = "Описание";
+"Not You?" = "Не Вы?";
+"By tapping to continue, you indicating that you have read the Privacy Policy and agree to the Terms of Service" = "Коснувшись \"продолжить\" Вы подтверждаете, что прочитали Политику Конфиденциальности и согласны с Условиями Использования";

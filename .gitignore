@@ -1,0 +1,30 @@
+# Xcode
+.DS_Store
+*/build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.moved-aside
+DerivedData
+.idea/
+*.hmap
+*.xccheckout
+
+
+#CocoaPods
+Pods
+Podfile.lock
+Speedle.xcodeproj/project.xcworkspace/
+Speedle.xcodeproj/xcuserdata/
+Speedle.xcodeproj/xcshareddata/
+Speedle.xcworkspace/xcshareddata/xcschemes/
+
+# Bundler binstubs
+.bundle
+bin

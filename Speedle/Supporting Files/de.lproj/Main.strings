@@ -1,0 +1,81 @@
+
+/* Class = "IBUILabel"; text = "Privacy Policy"; ObjectID = "0RN-F1-pGW"; */
+"0RN-F1-pGW.text" = "Privacy Policy";
+
+/* Class = "IBUITextField"; placeholder = "Email"; ObjectID = "3P9-jz-2eF"; */
+"3P9-jz-2eF.placeholder" = "Email";
+
+/* Class = "IBUITabBarItem"; title = "SETTINGS"; ObjectID = "3mI-dS-8tZ"; */
+"3mI-dS-8tZ.title" = "SETTINGS";
+
+/* Class = "IBUITextField"; placeholder = "Phone"; ObjectID = "585-uf-NTr"; */
+"585-uf-NTr.placeholder" = "Phone";
+
+/* Class = "IBUITabBarItem"; title = "FAVOURITES"; ObjectID = "5zb-hf-FGK"; */
+"5zb-hf-FGK.title" = "FAVOURITES";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "6wK-ul-H7W"; */
+"6wK-ul-H7W.text" = "Title";
+
+/* Class = "IBUIButton"; normalTitle = "Sign In With Facebook"; ObjectID = "BFy-ik-akw"; */
+"BFy-ik-akw.normalTitle" = "Sign In With Facebook";
+
+/* Class = "IBUINavigationItem"; title = "Category"; ObjectID = "DPR-K6-ko2"; */
+"DPR-K6-ko2.title" = "Category";
+
+/* Class = "IBUILabel"; text = "Please Sign In to continue!"; ObjectID = "EGF-BZ-kbo"; */
+"EGF-BZ-kbo.text" = "Please Sign In to continue!";
+
+/* Class = "IBUILabel"; text = "Personal Settings"; ObjectID = "EP6-Bc-Dhl"; */
+"EP6-Bc-Dhl.text" = "Personal Settings";
+
+/* Class = "IBUILabel"; text = "Ad radius"; ObjectID = "LEj-iq-nKc"; */
+"LEj-iq-nKc.text" = "Ad radius";
+
+/* Class = "IBUITabBarItem"; title = "HOME"; ObjectID = "QtU-5t-z1t"; */
+"QtU-5t-z1t.title" = "HOME";
+
+/* Class = "IBUITextField"; placeholder = "Name"; ObjectID = "Sai-b2-7Z6"; */
+"Sai-b2-7Z6.placeholder" = "Name";
+
+/* Class = "IBUILabel"; text = "User Name"; ObjectID = "Tux-in-p2h"; */
+"Tux-in-p2h.text" = "User Name";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "YyN-mc-X3I"; */
+"YyN-mc-X3I.text" = "Title";
+
+/* Class = "IBUINavigationItem"; title = "Privacy Policy"; ObjectID = "c8L-pJ-q4p"; */
+"c8L-pJ-q4p.title" = "Privacy Policy";
+
+/* Class = "IBUIButton"; normalTitle = "Sign In With Twitter"; ObjectID = "c9f-rD-ROO"; */
+"c9f-rD-ROO.normalTitle" = "Sign In With Twitter";
+
+/* Class = "IBUILabel"; text = "About"; ObjectID = "eKT-MQ-vRE"; */
+"eKT-MQ-vRE.text" = "About";
+
+/* Class = "IBUILabel"; text = "0.0 km"; ObjectID = "fZW-DC-zy4"; */
+"fZW-DC-zy4.text" = "0.0 km";
+
+/* Class = "IBUITabBarItem"; title = "MY ADS"; ObjectID = "gtv-4B-8lS"; */
+"gtv-4B-8lS.title" = "MY ADS";
+
+/* Class = "IBUIButton"; normalTitle = "Sign In With Instagram"; ObjectID = "iKM-Py-acT"; */
+"iKM-Py-acT.normalTitle" = "Sign In With Instagram";
+
+/* Class = "IBUINavigationItem"; title = "Category"; ObjectID = "kWb-ay-hCT"; */
+"kWb-ay-hCT.title" = "Category";
+
+/* Class = "IBUILabel"; text = "Log Out"; ObjectID = "kkW-Ld-dvE"; */
+"kkW-Ld-dvE.text" = "Log Out";
+
+/* Class = "IBUISearchBar"; placeholder = "Search"; ObjectID = "ojk-J0-zDW"; */
+"ojk-J0-zDW.placeholder" = "Search";
+
+/* Class = "IBUITabBarItem"; title = "NEW AD"; ObjectID = "tMx-WO-YZM"; */
+"tMx-WO-YZM.title" = "NEW AD";
+
+/* Class = "IBUINavigationItem"; title = "Personal Settings"; ObjectID = "vHX-WK-1LZ"; */
+"vHX-WK-1LZ.title" = "Personal Settings";
+
+/* Class = "IBUINavigationItem"; title = "About"; ObjectID = "xgQ-Sp-fCa"; */
+"xgQ-Sp-fCa.title" = "About";

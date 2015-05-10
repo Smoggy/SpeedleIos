@@ -1,0 +1,56 @@
+/****************************************************************************/
+/* Localization file */
+
+
+"Sign In Failed" = "Inloggningen misslyckades";
+"Please try again later" = "Var god försök senare";
+"Something went wrong" = "Ooops, något blev fel";
+"Session Error" = "Sessionsfel";
+"Your current session is no longer valid. Please log in again." = "Du har blivit utloggad, vad god logga in igen";
+"Please retry.\n\nIf the problem persists contact us and mention this error code: %@" = "Var god försök igen.\n\nOm felet kvarstår, kontakt oss och ange följande nummer: %@";
+"Are you sure you want to Log Out?" = "Vill du verkligen logga ut?";
+"Cancel" = "Avbryt";
+"Log Out" = "Logga ut";
+"now" = "nu";
+"Success" = "Lyckades";
+"Link copied to clipboard" = "Länken kopierad till utklipp";
+"Choose account to proceed" = "Välj konto för att fortsätta";
+"Post" = "Spara";
+"YES" = "JA";
+"NO" = "NEJ";
+"The ad will not be saved" = "Annonsen kommer inte sparas";
+"Are you sure?" = "Är du säker?";
+"Google+" = "Google+";
+"Twitter" = "Twitter";
+"Choose from Library" = "Välj från bibliotek";
+"Facebook" = "Facebook";
+"Take Photo" = "Ta foto";
+"Share this advertisement" = "Dela den här annonsen";
+"Choose Ad Picture" = "Välj foto";
+"Yes" = "Ja";
+"Mark this ad inappropriate?" = "Anmäl annonsen?";
+"Mark Inappropriate" = "Anmäl annonsen";
+"Copy" = "Kopiera";
+"Select Categories" = "Välj kategorier";
+"Send Email" = "Skicka epost";
+"Call" = "Ring";
+"Search" = "Sök";
+"Uploading photo" = "Laddar upp foto";
+"Privacy Policy" = "Privacy Policy";
+"Error loading" = "Fel vid inläsning";
+"No internet connection" = "Inget internet";
+"Remove" = "Ta bort";
+"Posting" = "Skickar";
+"No internet connection. Tap to reload" = "Inget internet, peka för att försöka igen";
+"Location services is disabled" = "Positioneringstjänster är avslagna";
+"OK" = "OK";
+"Save" = "Spara";
+"Your ads will be displayed here" = "Här kommer dina annonser synas";
+"SELECT A CATEGORY TO SEARCH" = "VÄLJ EN KATEGORI ATT SÖKA I";
+"Your favourite ads will be displayed here" = "Här kommer dina favoriter synas";
+"There are no ads to show in this location" = "Det finns inga annonser att visa här";
+"Remove Ad" = "Ta bort annons";
+"Terms of Service" = "Användarvilkor";
+"Description" = "Beskrivning. Tänk på att använda #hashtags för att fler skall hitta dina annonser";
+"Not You?" = "Inte du?";
+"By tapping to continue, you indicating that you have read the Privacy Policy and agree to the Terms of Service" = "Genom att fortsätta indikerar du att läst och godkänt vår Privacy Policy samt våra Användarvilkor";

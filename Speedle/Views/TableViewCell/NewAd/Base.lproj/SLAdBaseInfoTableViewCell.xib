@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SLAdBaseInfoTableViewCell" rowHeight="180" id="WC0-Be-48y" customClass="SLAdBaseInfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WC0-Be-48y" id="QWf-uX-TER">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVv-F5-AKo">
+                        <rect key="frame" x="0.0" y="155" width="600" height="162"/>
+                        <connections>
+                            <outlet property="dataSource" destination="WC0-Be-48y" id="bH9-Pa-d9l"/>
+                            <outlet property="delegate" destination="WC0-Be-48y" id="DZf-wG-9YE"/>
+                        </connections>
+                    </pickerView>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ufw-5M-1bn" customClass="SLTextField">
+                        <rect key="frame" x="150" y="0.0" width="435" height="35"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="cfE-aa-881"/>
+                        </constraints>
+                        <color key="textColor" red="0.34901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="_layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="_isMandatory" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="delegate" destination="WC0-Be-48y" id="dP5-RO-9pe"/>
+                        </connections>
+                    </textField>
+                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dW1-BT-h6F" customClass="SLTextField">
+                        <rect key="frame" x="150" y="45" width="435" height="35"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="jOj-FG-nJb"/>
+                        </constraints>
+                        <color key="textColor" red="0.34901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="_layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="_isMandatory" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="textFieldDidChange:" destination="WC0-Be-48y" eventType="editingChanged" id="pL3-1z-7RS"/>
+                            <outlet property="delegate" destination="WC0-Be-48y" id="Tku-lw-upt"/>
+                        </connections>
+                    </textField>
+                    <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="zF7-Jd-IC7" customClass="SLTextField">
+                        <rect key="frame" x="150" y="90" width="435" height="35"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="uow-Yz-x3I"/>
+                        </constraints>
+                        <color key="textColor" red="0.34901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="_layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="_isMandatory" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="textFieldDidChange:" destination="WC0-Be-48y" eventType="editingChanged" id="LwA-cZ-VPs"/>
+                            <outlet property="delegate" destination="WC0-Be-48y" id="wK0-SC-DRg"/>
+                        </connections>
+                    </textField>
+                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Price" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8Iz-Ot-e4x" customClass="SLTextField">
+                        <rect key="frame" x="150" y="135" width="435" height="35"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="n4K-gj-j0P"/>
+                        </constraints>
+                        <color key="textColor" red="0.34901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="_layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="_isMandatory" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="delegate" destination="WC0-Be-48y" id="jks-np-a8C"/>
+                        </connections>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9W-ve-rrx">
+                        <rect key="frame" x="15" y="135" width="125" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="0qy-YS-ptM"/>
+                        </constraints>
+                        <state key="normal" title="$ (USD)">
+                            <color key="titleColor" red="0.30588235289999999" green="0.3294117647" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="_layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="_layer.borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="currencyButtonPressed:" destination="WC0-Be-48y" eventType="touchUpInside" id="I4e-N0-0oM"/>
+                        </connections>
+                    </button>
+                    <imageView tag="10" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sWS-bc-b7F">
+                        <rect key="frame" x="15" y="0.0" width="125" height="125"/>
+                        <color key="backgroundColor" red="0.79215686269999996" green="0.79607843140000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="125" id="DKW-KF-Sam"/>
+                            <constraint firstAttribute="width" constant="125" id="UzC-LS-hZj"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_photo-icon" translatesAutoresizingMaskIntoConstraints="NO" id="VR1-1W-w4Y">
+                        <rect key="frame" x="103" y="8" width="30" height="23"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ufw-5M-1bn" firstAttribute="top" secondItem="QWf-uX-TER" secondAttribute="top" id="0zl-4Y-a46"/>
+                    <constraint firstItem="VR1-1W-w4Y" firstAttribute="leading" secondItem="sWS-bc-b7F" secondAttribute="trailing" constant="-37" id="2nx-hp-hds"/>
+                    <constraint firstItem="A9W-ve-rrx" firstAttribute="top" secondItem="sWS-bc-b7F" secondAttribute="bottom" constant="10" id="8BJ-XF-Ezi"/>
+                    <constraint firstItem="sWS-bc-b7F" firstAttribute="width" secondItem="A9W-ve-rrx" secondAttribute="width" id="H4s-US-Yog"/>
+                    <constraint firstItem="A9W-ve-rrx" firstAttribute="leading" secondItem="QWf-uX-TER" secondAttribute="leading" constant="15" id="H8P-Rg-Jju"/>
+                    <constraint firstAttribute="trailing" secondItem="Ufw-5M-1bn" secondAttribute="trailing" constant="15" id="IOP-PE-gv8"/>
+                    <constraint firstItem="zF7-Jd-IC7" firstAttribute="leading" secondItem="sWS-bc-b7F" secondAttribute="trailing" constant="10" id="IZK-ng-jg8"/>
+                    <constraint firstItem="bVv-F5-AKo" firstAttribute="top" secondItem="8Iz-Ot-e4x" secondAttribute="bottom" constant="-15" id="JZd-l1-6rS"/>
+                    <constraint firstItem="sWS-bc-b7F" firstAttribute="top" secondItem="QWf-uX-TER" secondAttribute="top" id="PJr-UP-8Zn"/>
+                    <constraint firstAttribute="trailing" secondItem="bVv-F5-AKo" secondAttribute="trailing" id="Q57-K3-D5v"/>
+                    <constraint firstAttribute="trailing" secondItem="zF7-Jd-IC7" secondAttribute="trailing" constant="15" id="U09-7P-c2N"/>
+                    <constraint firstItem="zF7-Jd-IC7" firstAttribute="top" secondItem="dW1-BT-h6F" secondAttribute="bottom" constant="10" id="USA-Rn-sg5"/>
+                    <constraint firstAttribute="trailing" secondItem="dW1-BT-h6F" secondAttribute="trailing" constant="15" id="V2R-O0-JUf"/>
+                    <constraint firstItem="sWS-bc-b7F" firstAttribute="leading" secondItem="QWf-uX-TER" secondAttribute="leading" constant="15" id="W42-h3-6oz"/>
+                    <constraint firstItem="Ufw-5M-1bn" firstAttribute="leading" secondItem="sWS-bc-b7F" secondAttribute="trailing" constant="10" id="ZJI-Xc-9nc"/>
+                    <constraint firstItem="8Iz-Ot-e4x" firstAttribute="leading" secondItem="A9W-ve-rrx" secondAttribute="trailing" constant="10" id="f04-33-iyj"/>
+                    <constraint firstItem="dW1-BT-h6F" firstAttribute="leading" secondItem="sWS-bc-b7F" secondAttribute="trailing" constant="10" id="gTH-TA-SQX"/>
+                    <constraint firstItem="dW1-BT-h6F" firstAttribute="top" secondItem="Ufw-5M-1bn" secondAttribute="bottom" constant="10" id="hgO-EG-rjs"/>
+                    <constraint firstItem="bVv-F5-AKo" firstAttribute="leading" secondItem="QWf-uX-TER" secondAttribute="leading" id="k8d-mN-28s"/>
+                    <constraint firstAttribute="trailing" secondItem="8Iz-Ot-e4x" secondAttribute="trailing" constant="15" id="mF0-Rf-2Zs"/>
+                    <constraint firstItem="8Iz-Ot-e4x" firstAttribute="top" secondItem="zF7-Jd-IC7" secondAttribute="bottom" constant="10" id="mLr-wn-eRd"/>
+                    <constraint firstItem="sWS-bc-b7F" firstAttribute="top" secondItem="VR1-1W-w4Y" secondAttribute="bottom" constant="-31" id="tdx-rc-BpD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="currencyButton" destination="A9W-ve-rrx" id="Uaa-yr-vLI"/>
+                <outlet property="currencyPickerView" destination="bVv-F5-AKo" id="APA-cP-wQZ"/>
+                <outlet property="emailTextField" destination="zF7-Jd-IC7" id="7KC-NJ-dgr"/>
+                <outlet property="firstNameTextField" destination="Ufw-5M-1bn" id="qVo-zH-xP3"/>
+                <outlet property="phoneTextField" destination="dW1-BT-h6F" id="f5p-Xo-ebN"/>
+                <outlet property="photoIconImageView" destination="VR1-1W-w4Y" id="y7Y-V5-CbO"/>
+                <outlet property="photoImageView" destination="sWS-bc-b7F" id="SXV-6t-rO4"/>
+                <outlet property="priceTextField" destination="8Iz-Ot-e4x" id="ud1-0L-Y7B"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="add_photo-icon" width="30" height="23"/>
+    </resources>
+</document>

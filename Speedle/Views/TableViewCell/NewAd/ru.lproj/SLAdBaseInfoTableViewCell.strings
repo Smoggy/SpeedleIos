@@ -1,0 +1,15 @@
+
+/* Class = "IBUITextField"; placeholder = "Price"; ObjectID = "8Iz-Ot-e4x"; */
+"8Iz-Ot-e4x.placeholder" = "Цена";
+
+/* Class = "IBUIButton"; normalTitle = "$ (USD)"; ObjectID = "A9W-ve-rrx"; */
+"A9W-ve-rrx.normalTitle" = "$ (USD)";
+
+/* Class = "IBUITextField"; placeholder = "Name"; ObjectID = "Ufw-5M-1bn"; */
+"Ufw-5M-1bn.placeholder" = "Имя";
+
+/* Class = "IBUITextField"; placeholder = "Phone Number"; ObjectID = "dW1-BT-h6F"; */
+"dW1-BT-h6F.placeholder" = "Номер телефона";
+
+/* Class = "IBUITextField"; placeholder = "Email"; ObjectID = "zF7-Jd-IC7"; */
+"zF7-Jd-IC7.placeholder" = "Email";

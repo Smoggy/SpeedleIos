@@ -1,0 +1,81 @@
+
+/* Class = "IBUILabel"; text = "Privacy Policy"; ObjectID = "0RN-F1-pGW"; */
+"0RN-F1-pGW.text" = "Privacy Policy";
+
+/* Class = "IBUITextField"; placeholder = "Email"; ObjectID = "3P9-jz-2eF"; */
+"3P9-jz-2eF.placeholder" = "Email";
+
+/* Class = "IBUITabBarItem"; title = "SETTINGS"; ObjectID = "3mI-dS-8tZ"; */
+"3mI-dS-8tZ.title" = "INSTÄLLNINGAR";
+
+/* Class = "IBUITextField"; placeholder = "Phone"; ObjectID = "585-uf-NTr"; */
+"585-uf-NTr.placeholder" = "Telefon";
+
+/* Class = "IBUITabBarItem"; title = "FAVOURITES"; ObjectID = "5zb-hf-FGK"; */
+"5zb-hf-FGK.title" = "FAVORITER";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "6wK-ul-H7W"; */
+"6wK-ul-H7W.text" = "TITEL";
+
+/* Class = "IBUIButton"; normalTitle = "Sign In With Facebook"; ObjectID = "BFy-ik-akw"; */
+"BFy-ik-akw.normalTitle" = "Logga in med Facebook";
+
+/* Class = "IBUINavigationItem"; title = "Category"; ObjectID = "DPR-K6-ko2"; */
+"DPR-K6-ko2.title" = "Kategori";
+
+/* Class = "IBUILabel"; text = "Please Sign In to continue!"; ObjectID = "EGF-BZ-kbo"; */
+"EGF-BZ-kbo.text" = "Var god logga in för att fortsätta!";
+
+/* Class = "IBUILabel"; text = "Personal Settings"; ObjectID = "EP6-Bc-Dhl"; */
+"EP6-Bc-Dhl.text" = "Inställningar";
+
+/* Class = "IBUILabel"; text = "Ad radius"; ObjectID = "LEj-iq-nKc"; */
+"LEj-iq-nKc.text" = "Sökradie";
+
+/* Class = "IBUITabBarItem"; title = "HOME"; ObjectID = "QtU-5t-z1t"; */
+"QtU-5t-z1t.title" = "HEM";
+
+/* Class = "IBUITextField"; placeholder = "Name"; ObjectID = "Sai-b2-7Z6"; */
+"Sai-b2-7Z6.placeholder" = "Namn";
+
+/* Class = "IBUILabel"; text = "User Name"; ObjectID = "Tux-in-p2h"; */
+"Tux-in-p2h.text" = "Användarnamn";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "YyN-mc-X3I"; */
+"YyN-mc-X3I.text" = "Titel";
+
+/* Class = "IBUINavigationItem"; title = "Privacy Policy"; ObjectID = "c8L-pJ-q4p"; */
+"c8L-pJ-q4p.title" = "Privacy Policy";
+
+/* Class = "IBUIButton"; normalTitle = "Sign In With Twitter"; ObjectID = "c9f-rD-ROO"; */
+"c9f-rD-ROO.normalTitle" = "Logga in med Twitter";
+
+/* Class = "IBUILabel"; text = "About"; ObjectID = "eKT-MQ-vRE"; */
+"eKT-MQ-vRE.text" = "Om";
+
+/* Class = "IBUILabel"; text = "0.0 km"; ObjectID = "fZW-DC-zy4"; */
+"fZW-DC-zy4.text" = "0.0 km";
+
+/* Class = "IBUITabBarItem"; title = "MY ADS"; ObjectID = "gtv-4B-8lS"; */
+"gtv-4B-8lS.title" = "MINA";
+
+/* Class = "IBUIButton"; normalTitle = "Sign In With Instagram"; ObjectID = "iKM-Py-acT"; */
+"iKM-Py-acT.normalTitle" = "Logga in med Instagram";
+
+/* Class = "IBUINavigationItem"; title = "Category"; ObjectID = "kWb-ay-hCT"; */
+"kWb-ay-hCT.title" = "Kategori";
+
+/* Class = "IBUILabel"; text = "Log Out"; ObjectID = "kkW-Ld-dvE"; */
+"kkW-Ld-dvE.text" = "Logga ut";
+
+/* Class = "IBUISearchBar"; placeholder = "Search"; ObjectID = "ojk-J0-zDW"; */
+"ojk-J0-zDW.placeholder" = "Sök";
+
+/* Class = "IBUITabBarItem"; title = "NEW AD"; ObjectID = "tMx-WO-YZM"; */
+"tMx-WO-YZM.title" = "NY ANNONS";
+
+/* Class = "IBUINavigationItem"; title = "Personal Settings"; ObjectID = "vHX-WK-1LZ"; */
+"vHX-WK-1LZ.title" = "Inställningar";
+
+/* Class = "IBUINavigationItem"; title = "About"; ObjectID = "xgQ-Sp-fCa"; */
+"xgQ-Sp-fCa.title" = "Om";

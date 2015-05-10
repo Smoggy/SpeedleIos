@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Speedle
+
+  Created by Vova Pogrebnyak on 2/12/15.
+  Copyright (c) 2015 Bryderi. All rights reserved.
+*/
+
+"NSLocationAlwaysUsageDescription" = "Speedle behöver din plats för att hjälpa dig hitta intressanta annonser.";

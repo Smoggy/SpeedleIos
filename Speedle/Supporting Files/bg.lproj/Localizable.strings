@@ -1,0 +1,56 @@
+/****************************************************************************/
+/* Localization file */
+
+
+"Sign In Failed" = "Неуспешно влизане";
+"Please try again later" = "Моля, опитайте пак по-късно";
+"Something went wrong" = "Нещо не е наред";
+"Session Error" = "Грeшка в сесията";
+"Your current session is no longer valid. Please log in again." = "Текущата сесия вече не е валидна. Моля, влезте отново.";
+"Please retry.\n\nIf the problem persists contact us and mention this error code: %@" = "Моля, опитайте отново.\n\nАко проблемът продължава, свържете се с нас и дайте този код за грешка: %@";
+"Are you sure you want to Log Out?" = "Наистина ли искате да излезете?";
+"Cancel" = "Отмени";
+"Log Out" = "Излез";
+"now" = "сега";
+"Success" = "Успех";
+"Link copied to clipboard" = "Линкът е копиран в клипборда";
+"Choose account to proceed" = "Изберете акаунт за да продължите";
+"Post" = "Публикувай";
+"YES" = "Да";
+"NO" = "Не";
+"The ad will not be saved" = "Вашата обява няма да бъде съхранена";
+"Are you sure?" = "Сигурни ли сте?";
+"Google+" = "Google+";
+"Twitter" = "Twitter";
+"Choose from Library" = "Изберете от Библиотеката";
+"Facebook" = "Facebook";
+"Take Photo" = "Снимайте";
+"Share this advertisement" = "Споделете вашата обява";
+"Choose Ad Picture" = "Изберете снимка за вашата обява";
+"Yes" = "Da";
+"Mark this ad inappropriate?" = "Искате ли да маркирате тази обява като неподходяща?";
+"Mark Inappropriate" = "Маркирайте като неподходящо";
+"Copy" = "Koпирайте";
+"Select Categories" = "Изберете категория";
+"Send Email" = "Пратете имейл";
+"Call" = "Позвъни";
+"Search" = "Потърси";
+"Uploading photo" = "Снимката се качва";
+"Privacy Policy" = "Конфиденциалност";
+"Error loading" = "Грешка при зареждане";
+"No internet connection" = "Нама връзка с интернет";
+"Remove" = "Премахни";
+"Posting" = "Публикува се";
+"No internet connection. Tap to reload" = "Няма връзка с интернет. Докоснете за да презаредите";
+"Location services is disabled" = "Настройката за местоположение не е активирана";
+"OK" = "OK";
+"Save" = "Запази";
+"Your ads will be displayed here" = "Вашите обяви ще бъдат запазени тук";
+"SELECT A CATEGORY TO SEARCH" = "ИЗБЕРЕТЕ КАТЕГОРИЯ ЗА ТЪРСЕНЕ";
+"Your favourite ads will be displayed here" = "Предпочитаните от вас обяви ще бъдат показани тук";
+"There are no ads to show in this location" = "Няма обяви в избраната от вас област";
+"Remove Ad" = "Премахнете обявата";
+"Terms of Service" = "Условия за ползване";
+"Description" = "Description";
+"Not You?" = "Not You?";
+"By tapping to continue, you indicating that you have read the Privacy Policy and agree to the Terms of Service" = "By tapping to continue, you indicating that you have read the Privacy Policy and agree to the Terms of Service";

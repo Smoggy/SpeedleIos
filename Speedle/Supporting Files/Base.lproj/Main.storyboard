@@ -1,0 +1,1410 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Cka-X8-QFH">
+            <objects>
+                <navigationController storyboardIdentifier="SLAuthorizationViewController" id="L0q-UJ-uhC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="NFR-kB-QWA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.35294117650000001" green="0.66666666669999997" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="GdJ-N5-9mM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bSR-HG-2e5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1559" y="461"/>
+        </scene>
+        <!--Authorization View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="SLAuthorizationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Sign In to continue!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="EGF-BZ-kbo">
+                                <rect key="frame" x="8" y="382" width="584" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.30588235289999999" green="0.3294117647" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFy-ik-akw" customClass="SLButton">
+                                <rect key="frame" x="15" y="426" width="570" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="DCp-Xy-8yp"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign In With Facebook" image="facebook-icon">
+                                    <color key="titleColor" red="0.23529411764705882" green="0.35294117647058826" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="_layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signInWithFacebookButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UeC-HW-2Li"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKM-Py-acT" customClass="SLButton">
+                                <rect key="frame" x="15" y="491" width="570" height="45"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="JVQ-pM-vQh"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign In With Instagram" image="instagram-icon">
+                                    <color key="titleColor" red="0.16470588235294117" green="0.36078431372549019" blue="0.51764705882352946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="_layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="2QT-NI-lKv">
+                                <rect key="frame" x="218" y="130" width="165" height="155"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9f-rD-ROO" customClass="SLButton">
+                                <rect key="frame" x="15" y="431" width="570" height="45"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="PFs-rl-kD0"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign In With Twitter" image="twitter-icon">
+                                    <color key="titleColor" red="0.24705882352941178" green="0.76470588235294112" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="_layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="gZ9-wb-BK8">
+                                <rect key="frame" x="290" y="439" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8901960784313725" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="c9f-rD-ROO" firstAttribute="top" secondItem="BFy-ik-akw" secondAttribute="bottom" constant="-40" id="4pj-tL-4tF"/>
+                            <constraint firstAttribute="trailing" secondItem="c9f-rD-ROO" secondAttribute="trailing" constant="15" id="4vL-YP-nPO"/>
+                            <constraint firstAttribute="trailing" secondItem="iKM-Py-acT" secondAttribute="trailing" constant="15" id="ImG-Mk-r34"/>
+                            <constraint firstItem="c9f-rD-ROO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="15" id="SXP-YS-Daq"/>
+                            <constraint firstAttribute="trailing" secondItem="BFy-ik-akw" secondAttribute="trailing" constant="15" id="Yyo-NM-0ou"/>
+                            <constraint firstItem="EGF-BZ-kbo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="8" id="ZeG-Cc-tdi"/>
+                            <constraint firstItem="iKM-Py-acT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="15" id="ZhQ-EQ-TdD"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="iKM-Py-acT" secondAttribute="bottom" id="c5i-4f-EG4"/>
+                            <constraint firstItem="BFy-ik-akw" firstAttribute="top" secondItem="EGF-BZ-kbo" secondAttribute="bottom" constant="20" id="gjV-OS-L9B"/>
+                            <constraint firstAttribute="trailing" secondItem="EGF-BZ-kbo" secondAttribute="trailing" constant="8" id="hhf-si-F31"/>
+                            <constraint firstItem="2QT-NI-lKv" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="130" id="ijM-oo-seC"/>
+                            <constraint firstItem="BFy-ik-akw" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="15" id="phz-ih-PL8"/>
+                            <constraint firstItem="gZ9-wb-BK8" firstAttribute="centerX" secondItem="BFy-ik-akw" secondAttribute="centerX" id="qqd-WH-0Bg"/>
+                            <constraint firstAttribute="centerX" secondItem="2QT-NI-lKv" secondAttribute="centerX" id="sdN-K7-Jyy"/>
+                            <constraint firstItem="gZ9-wb-BK8" firstAttribute="centerY" secondItem="BFy-ik-akw" secondAttribute="centerY" constant="0.5" id="vpo-JM-igY"/>
+                            <constraint firstItem="iKM-Py-acT" firstAttribute="top" secondItem="c9f-rD-ROO" secondAttribute="bottom" constant="15" id="xSF-VP-2DF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dXc-fN-sd7"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="gZ9-wb-BK8" id="S26-s1-sZE"/>
+                        <outlet property="facebookButton" destination="BFy-ik-akw" id="vcZ-MN-IBp"/>
+                        <segue destination="TC1-GT-qB5" kind="show" identifier="SLAuthorizationToConfirmationSegue" id="i84-ot-14K"/>
+                        <segue destination="bbT-cz-6FN" kind="show" identifier="SLAuthorizationToTabbarSegue" id="70Q-ib-aDJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-880" y="461"/>
+        </scene>
+        <!--Confirmation View Controller-->
+        <scene sceneID="Ltd-Hi-wy8">
+            <objects>
+                <viewController id="TC1-GT-qB5" customClass="SLConfirmationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="U9q-rE-ar7"/>
+                        <viewControllerLayoutGuide type="bottom" id="4pW-aE-GjA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YqL-4W-Ebc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo-icon" translatesAutoresizingMaskIntoConstraints="NO" id="LLw-Qg-3Oh">
+                                <rect key="frame" x="238" y="60" width="125" height="125"/>
+                                <color key="backgroundColor" red="0.792156862745098" green="0.792156862745098" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="KMZ-Sh-NR8"/>
+                                    <constraint firstAttribute="width" constant="125" id="zBX-bO-GdQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="_layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                                        <integer key="value" value="65"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tux-in-p2h">
+                                <rect key="frame" x="256" y="205" width="88" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" id="1bM-NK-55H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.2666666667" green="0.62352941179999999" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNB-bB-MjY" customClass="MZSelectableLabel">
+                                <rect key="frame" x="10" y="445" width="580" height="41"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="By tapping to continue, you indicating that you have read the ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34901960784313724" green="0.37254901960784315" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Privacy Policy">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34901960784313724" green="0.37254901960784315" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34901960784313724" green="0.37254901960784315" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="and agree to the">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34901960784313724" green="0.37254901960784315" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34901960784313724" green="0.37254901960784315" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Terms of Service">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34901960784313724" green="0.37254901960784315" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nqp-9D-9Gy">
+                                <rect key="frame" x="270" y="227" width="60" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="4GP-6a-5PG"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" id="yGL-zz-wMF"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Not You?">
+                                            <attributes>
+                                                <color key="NSColor" red="0.65098039215686276" green="0.65098039215686276" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue-Light"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="notYouButtonPressed:" destination="TC1-GT-qB5" eventType="touchUpInside" id="1QS-2Z-6hH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="QNB-bB-MjY" firstAttribute="leading" secondItem="YqL-4W-Ebc" secondAttribute="leading" constant="10" id="9fe-Cn-8JH"/>
+                            <constraint firstAttribute="trailing" secondItem="QNB-bB-MjY" secondAttribute="trailing" constant="10" id="Aba-86-Pl6"/>
+                            <constraint firstAttribute="centerX" secondItem="nqp-9D-9Gy" secondAttribute="centerX" id="Buk-dC-aIF"/>
+                            <constraint firstAttribute="centerX" secondItem="LLw-Qg-3Oh" secondAttribute="centerX" id="Dvd-vF-LOl"/>
+                            <constraint firstAttribute="centerX" secondItem="Tux-in-p2h" secondAttribute="centerX" id="K3G-vT-ceX"/>
+                            <constraint firstItem="Tux-in-p2h" firstAttribute="top" secondItem="LLw-Qg-3Oh" secondAttribute="bottom" constant="20" id="VqA-Zp-KvC"/>
+                            <constraint firstItem="nqp-9D-9Gy" firstAttribute="top" secondItem="Tux-in-p2h" secondAttribute="bottom" id="egB-r0-GDV"/>
+                            <constraint firstItem="4pW-aE-GjA" firstAttribute="top" secondItem="QNB-bB-MjY" secondAttribute="bottom" constant="50" id="f8R-46-Z6v"/>
+                            <constraint firstItem="LLw-Qg-3Oh" firstAttribute="top" secondItem="U9q-rE-ar7" secondAttribute="bottom" constant="60" id="vfj-2R-Pmu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pHz-Fw-h7u">
+                        <barButtonItem key="leftBarButtonItem" image="arrow_left-icon" id="8KP-Gp-rVA">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="backButtonPressed:" destination="TC1-GT-qB5" id="3yX-Ua-9j0"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="arrow_right-icon" id="TPe-Mo-vfg">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="continueButtonPressed:" destination="TC1-GT-qB5" id="IN8-a3-YiR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="notYouButton" destination="nqp-9D-9Gy" id="b1Z-hq-Nqh"/>
+                        <outlet property="termsLabel" destination="QNB-bB-MjY" id="zLf-LY-0Q4"/>
+                        <outlet property="userPhotoImageView" destination="LLw-Qg-3Oh" id="pys-mp-hQC"/>
+                        <outlet property="usernameLabel" destination="Tux-in-p2h" id="DRW-HP-KNA"/>
+                        <segue destination="bbT-cz-6FN" kind="show" identifier="SLConfirmationToTabbarSegue" id="CSF-ly-MG2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eij-Cz-ke9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-880" y="1175"/>
+        </scene>
+        <!--HOME-->
+        <scene sceneID="dXK-kM-lnZ">
+            <objects>
+                <collectionViewController id="Jo2-Ps-Ou0" customClass="SLHomeCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="XXc-SR-LGF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="p5v-IW-HeH" customClass="SLParentCollectionViewLayout">
+                            <size key="itemSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="50" height="44"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SLSearchBarReusableViewIdentifier" id="h1l-iw-ab5" customClass="SLSearchBarCollectionReusableView">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="ojk-J0-zDW">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="ojk-J0-zDW" secondAttribute="trailing" id="ITp-lf-kLl"/>
+                                <constraint firstItem="ojk-J0-zDW" firstAttribute="leading" secondItem="h1l-iw-ab5" secondAttribute="leading" id="UMh-Kl-l2l"/>
+                                <constraint firstAttribute="bottom" secondItem="ojk-J0-zDW" secondAttribute="bottom" id="nmz-kv-5VP"/>
+                                <constraint firstItem="ojk-J0-zDW" firstAttribute="top" secondItem="h1l-iw-ab5" secondAttribute="top" id="u2P-8N-AuJ"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="searchBar" destination="ojk-J0-zDW" id="nt0-k4-eN3"/>
+                            </connections>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="Jo2-Ps-Ou0" id="82J-yK-FjX"/>
+                            <outlet property="delegate" destination="Jo2-Ps-Ou0" id="Wak-MJ-ghZ"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="HOME" image="home-icon" id="QtU-5t-z1t">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                    <connections>
+                        <segue destination="edp-am-0CT" kind="show" identifier="SLHomeToCategoriesSegue" id="Ejl-fe-eZs"/>
+                        <segue destination="O2P-fT-pTC" kind="show" identifier="SLHomeToEditSegue" id="Hm8-f2-ntC"/>
+                        <segue destination="ryg-Av-GUk" kind="show" identifier="SLHomeToPreviewSegue" id="0e9-jl-VWe"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lDG-Uc-MKP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1572" y="2021"/>
+        </scene>
+        <!--NEW AD-->
+        <scene sceneID="Qp0-Sp-fDB">
+            <objects>
+                <tableViewController id="GEo-xZ-mfo" customClass="SLAdInfoTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="1" id="tWt-VS-8QI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.9137254901960784" green="0.9137254901960784" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="GEo-xZ-mfo" id="YX5-Rp-coZ"/>
+                            <outlet property="delegate" destination="GEo-xZ-mfo" id="wsh-Mh-Fii"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="NEW AD" image="new_ad-icon" id="tMx-WO-YZM">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                    <connections>
+                        <segue destination="8np-Mb-rn2" kind="show" identifier="SLNewAdToPreviewSegue" id="Hyy-f2-A57"/>
+                        <segue destination="ryH-pj-bdA" kind="show" identifier="SLAdToCategoriesSegue" id="sP6-XQ-6Yy"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rlg-n2-CJr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-181" y="2021"/>
+        </scene>
+        <!--Category-->
+        <scene sceneID="dK3-Nl-MHu">
+            <objects>
+                <tableViewController id="edp-am-0CT" customClass="SLCategoriesToSearchTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" id="hpl-EA-wev">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.15686274510000001" green="0.50196078430000002" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SLCategoryInfoTableViewCell" textLabel="YyN-mc-X3I" style="IBUITableViewCellStyleDefault" id="0Hu-8l-aru" customClass="SLCategoryTableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Hu-8l-aru" id="wFJ-ei-LMd">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YyN-mc-X3I">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.15686274510000001" green="0.50196078430000002" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="edp-am-0CT" id="V6n-Lg-6XL"/>
+                            <outlet property="delegate" destination="edp-am-0CT" id="E5y-Oi-vhB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Category" id="DPR-K6-ko2"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fAW-CO-nqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1888" y="2813"/>
+        </scene>
+        <!--Category-->
+        <scene sceneID="kpJ-oI-4ti">
+            <objects>
+                <tableViewController id="ryH-pj-bdA" customClass="SLAdCategoriesTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="eVf-5S-3QH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.15686274510000001" green="0.50196078430000002" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SLCategoryInfoTableViewCell" textLabel="6wK-ul-H7W" style="IBUITableViewCellStyleDefault" id="1df-p5-lIm" customClass="SLCategoryTableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1df-p5-lIm" id="sA6-Ik-Jmx">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6wK-ul-H7W">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.15686274510000001" green="0.50196078430000002" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ryH-pj-bdA" id="76V-MX-L0g"/>
+                            <outlet property="delegate" destination="ryH-pj-bdA" id="TWo-Mp-8xb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Category" id="kWb-ay-hCT"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="zYO-N7-46o">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <action selector="doRefresh:" destination="ryH-pj-bdA" eventType="valueChanged" id="PmV-uk-OB3"/>
+                        </connections>
+                    </refreshControl>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4D1-st-Lie" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1627" y="3851"/>
+        </scene>
+        <!--FAVOURITES-->
+        <scene sceneID="gXF-my-ich">
+            <objects>
+                <collectionViewController id="Q3s-Bn-iIt" customClass="SLFavouritesCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="uvf-Sa-opN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RBR-Ml-s6x" customClass="SLParentCollectionViewLayout">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="Q3s-Bn-iIt" id="BFS-ev-dHb"/>
+                            <outlet property="delegate" destination="Q3s-Bn-iIt" id="eFz-0M-8aD"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="FAVOURITES" image="favorites-icon" id="5zb-hf-FGK">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                    <connections>
+                        <segue destination="ryg-Av-GUk" kind="show" identifier="SLFavouritesToPreviewSegue" id="SlS-8r-FAw"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ps7-LT-hOT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895" y="2011"/>
+        </scene>
+        <!--MY ADS-->
+        <scene sceneID="5ju-Kl-HPh">
+            <objects>
+                <collectionViewController id="vcY-YC-zU2" customClass="SLMyAdsCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ftq-8h-4eL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="71X-f5-GIB" customClass="SLParentCollectionViewLayout">
+                            <size key="itemSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="vcY-YC-zU2" id="oSN-Rg-TcB"/>
+                            <outlet property="delegate" destination="vcY-YC-zU2" id="q3g-KK-fEW"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="MY ADS" image="my_ads-icon" id="gtv-4B-8lS">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                    <connections>
+                        <segue destination="ryg-Av-GUk" kind="show" identifier="SLMyAdsToPreviewSegue" id="aAY-iA-rHu"/>
+                        <segue destination="O2P-fT-pTC" kind="show" identifier="SLMyAdsToEditSegue" id="DCA-FV-XQu"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wXT-QZ-45j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1622" y="2021"/>
+        </scene>
+        <!--Edit Info Table View Controller-->
+        <scene sceneID="Afy-w4-YEB">
+            <objects>
+                <tableViewController id="O2P-fT-pTC" customClass="SLEditInfoTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="MGT-I1-djN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="O2P-fT-pTC" id="9xr-FS-cjZ"/>
+                            <outlet property="delegate" destination="O2P-fT-pTC" id="2Of-Ap-zkc"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="ryH-pj-bdA" kind="show" identifier="SLEditToCategoriesSegue" id="DtM-p4-Ko0"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F8B-om-g8s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1622" y="3039"/>
+        </scene>
+        <!--SETTINGS-->
+        <scene sceneID="JnP-ip-vZw">
+            <objects>
+                <tableViewController id="P7V-bj-4yc" customClass="SLSettingsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="PgG-Tc-Pe4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection id="qeZ-dO-zfL">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="EP6-Bc-Dhl" style="IBUITableViewCellStyleDefault" id="cka-Zs-lho">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cka-Zs-lho" id="gYn-AX-Yt7">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Personal Settings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EP6-Bc-Dhl">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.16078431369999999" green="0.50196078430000002" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="NPh-tY-cqd" kind="show" id="MnR-HI-XOM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="XmD-pE-QVv">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="80" id="vke-oQ-5UN" customClass="SLSettingsRadiusTableViewCell">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vke-oQ-5UN" id="4lI-G8-Qlp">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ad radius" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEj-iq-nKc">
+                                                    <rect key="frame" x="14" y="8" width="83" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="83" id="S6F-oZ-DrM"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.16078431369999999" green="0.50196078430000002" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.10000000000000001" maxValue="100" minimumValueImage="ad_radius_small" maximumValueImage="ad_radius_big" translatesAutoresizingMaskIntoConstraints="NO" id="chl-3B-y1i">
+                                                    <rect key="frame" x="12" y="39" width="576" height="31"/>
+                                                    <color key="tintColor" red="0.16078431369999999" green="0.50196078430000002" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <connections>
+                                                        <action selector="radiusSliderValueChanged:" destination="vke-oQ-5UN" eventType="valueChanged" id="ed6-My-FCm"/>
+                                                    </connections>
+                                                </slider>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 km" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZW-DC-zy4">
+                                                    <rect key="frame" x="526" y="8" width="60" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="SyL-XN-UYw"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="chl-3B-y1i" secondAttribute="bottom" constant="10" id="C17-Xu-PIx"/>
+                                                <constraint firstAttribute="trailing" secondItem="chl-3B-y1i" secondAttribute="trailing" constant="14" id="T6s-Mf-UKZ"/>
+                                                <constraint firstItem="LEj-iq-nKc" firstAttribute="top" secondItem="4lI-G8-Qlp" secondAttribute="top" constant="8" id="c88-p5-z9F"/>
+                                                <constraint firstItem="fZW-DC-zy4" firstAttribute="top" secondItem="4lI-G8-Qlp" secondAttribute="top" constant="8" id="cxb-cI-hTb"/>
+                                                <constraint firstItem="LEj-iq-nKc" firstAttribute="leading" secondItem="4lI-G8-Qlp" secondAttribute="leading" constant="14" id="eQW-CP-tg9"/>
+                                                <constraint firstAttribute="trailing" secondItem="fZW-DC-zy4" secondAttribute="trailing" constant="14" id="ejZ-z9-xnl"/>
+                                                <constraint firstAttribute="centerX" secondItem="chl-3B-y1i" secondAttribute="centerX" id="k1X-8K-W8u"/>
+                                                <constraint firstItem="chl-3B-y1i" firstAttribute="leading" secondItem="4lI-G8-Qlp" secondAttribute="leading" constant="14" id="uFT-xg-qQH"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="radiusLabel" destination="fZW-DC-zy4" id="9qj-yo-obZ"/>
+                                            <outlet property="radiusSlider" destination="chl-3B-y1i" id="7G8-nE-vWf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="wOg-24-mI6">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="0RN-F1-pGW" style="IBUITableViewCellStyleDefault" id="9uE-1N-h7H">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9uE-1N-h7H" id="bnf-6R-T1R">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Privacy Policy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0RN-F1-pGW">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.16078431369999999" green="0.50196078430000002" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="WBN-uB-4oF" kind="show" id="FtE-uB-9yB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="dYX-gX-IdQ">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="kkW-Ld-dvE" style="IBUITableViewCellStyleDefault" id="8gf-35-W1X">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8gf-35-W1X" id="ZpT-cC-5TX">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Log Out" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kkW-Ld-dvE">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.16078431369999999" green="0.50196078430000002" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="P7V-bj-4yc" id="dbH-rO-xip"/>
+                            <outlet property="delegate" destination="P7V-bj-4yc" id="V28-q7-n27"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="SETTINGS" image="settings-icon" id="3mI-dS-8tZ">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5yK-W1-BBZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3017" y="2021"/>
+        </scene>
+        <!--Show Advert View Controller-->
+        <scene sceneID="d9v-eP-9QK">
+            <objects>
+                <viewController id="ryg-Av-GUk" customClass="SLShowAdvertViewController" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="O2P-fT-pTC" kind="show" identifier="SLShowAdvertToEditSegue" id="jBt-d2-dWD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7h1-yZ-dC3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895" y="3039"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="Sgh-JL-lvO">
+            <objects>
+                <viewController id="Scp-W1-JSA" customClass="SLTextViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Ar-jj-xLB"/>
+                        <viewControllerLayoutGuide type="bottom" id="KFl-T7-Ddy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BYb-3o-QNF">
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m76-B9-DLJ">
+                                <rect key="frame" x="8" y="20" width="584" height="580"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="About">
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.30588235294117649" green="0.32941176470588235" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="  ">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Mission">
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.30588235294117649" green="0.32941176470588235" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Privacy">
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.30588235294117649" green="0.32941176470588235" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9137254901960784" green="0.9137254901960784" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="m76-B9-DLJ" firstAttribute="leading" secondItem="BYb-3o-QNF" secondAttribute="leading" constant="8" id="CQ4-WD-gxU"/>
+                            <constraint firstAttribute="trailing" secondItem="m76-B9-DLJ" secondAttribute="trailing" constant="8" id="FER-DX-k2T"/>
+                            <constraint firstItem="m76-B9-DLJ" firstAttribute="top" secondItem="1Ar-jj-xLB" secondAttribute="bottom" id="czb-bC-l4e"/>
+                            <constraint firstItem="KFl-T7-Ddy" firstAttribute="top" secondItem="m76-B9-DLJ" secondAttribute="bottom" id="jlA-zi-nvA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="xgQ-Sp-fCa"/>
+                    <connections>
+                        <outlet property="textView" destination="m76-B9-DLJ" id="QDB-Lj-Xp9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDl-xI-oqz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2379" y="2813"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xV2-Aj-pME">
+            <objects>
+                <navigationController storyboardIdentifier="SLTabbarViewController" id="AqD-Xa-d4k" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="X2d-2p-qHp"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="9Fb-ar-C5W">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.3529411764705882" green="0.66666666666666663" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Yxg-d8-5HH">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="bbT-cz-6FN" kind="relationship" relationship="rootViewController" id="0JT-rA-OzF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7L1-Rf-Qgs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="460" y="462"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="pVA-28-nxY">
+            <objects>
+                <tabBarController id="bbT-cz-6FN" customClass="SLTabBarController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ifZ-Hh-zEk"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="AjG-no-BO1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Jo2-Ps-Ou0" kind="relationship" relationship="viewControllers" id="BaD-8E-TgR"/>
+                        <segue destination="GEo-xZ-mfo" kind="relationship" relationship="viewControllers" id="rPT-Lr-W3D"/>
+                        <segue destination="Q3s-Bn-iIt" kind="relationship" relationship="viewControllers" id="cv4-TQ-ZmX"/>
+                        <segue destination="vcY-YC-zU2" kind="relationship" relationship="viewControllers" id="7nW-pi-n8g"/>
+                        <segue destination="P7V-bj-4yc" kind="relationship" relationship="viewControllers" id="sEV-75-HSu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="woc-aA-UDL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="460" y="1175"/>
+        </scene>
+        <!--Privacy Policy-->
+        <scene sceneID="A9N-6g-6cr">
+            <objects>
+                <viewController id="WBN-uB-4oF" customClass="SLTextViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h8X-IJ-XNC"/>
+                        <viewControllerLayoutGuide type="bottom" id="jSW-Hm-i6C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4EE-vZ-ZhV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hU1-8c-xwt">
+                                <rect key="frame" x="8" y="0.0" width="584" height="487"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">This Privacy Policy governs the manner in which Bryderi AB collects, uses, maintains and discloses information collected from users (each, a "User") of the Speedle.se website ("Site"). This privacy policy applies to the Site and all products and services offered by Bryderi AB.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.30588235294117649" green="0.32941176470588235" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Personal identification information">
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">We may collect personal identification information from Users in a variety of ways, including, but not limited to, when Users visit our site, register on the site, and in connection with other activities, services, features or resources we make available on our Site. Users may be asked for, as appropriate, phone number. Users may, however, visit our Site anonymously. We will collect personal identification information from Users only if they voluntarily submit such information to us. Users can always refuse to supply personally identification information, except that it may prevent them from engaging in certain Site related activities.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.30588235294117649" green="0.32941176470588235" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.30588235294117649" green="0.32941176470588235" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Non-personal identification information">
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">We may collect non-personal identification information about Users whenever they interact with our Site. Non-personal identification information may include the browser name, the type of computer and technical information about Users means of connection to our Site, such as the operating system and the Internet service providers utilized and other similar information.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.30588235294117649" green="0.32941176470588235" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Web browser cookies">
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Our Site may use "cookies" to enhance User experience. User's web browser places cookies on their hard drive for record-keeping purposes and sometimes to track information about them. User may choose to set their web browser to refuse cookies, or to alert you when cookies are being sent. If they do so, note that some parts of the Site may not function properly.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.30588235294117649" green="0.32941176470588235" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="How we use collected information">
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Bryderi AB may collect and use Users personal information for the following purposes:">
+                                        <attributes>
+                                            <color key="NSColor" red="0.30588235294117649" green="0.32941176470588235" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.30588235294117649" green="0.32941176470588235" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">- To improve customer service
+	Information you provide helps us respond to your customer service requests and support needs more efficiently.
+- To personalize user experience
+	We may use information in the aggregate to understand how our Users as a group use the services and resources provided on our Site.
+- To improve our Site
+	We may use feedback you provide to improve our products and services.
+- To run a promotion, contest, survey or other Site feature
+	To send Users information they agreed to receive about topics we think will be of interest to them.
+- To send periodic emails
+We may use the email address to send User information and updates pertaining to their order. It may also be used to respond to their inquiries, questions, and/or other requests. </string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.30588235294117649" green="0.32941176470588235" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="How we protect your information">
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">We adopt appropriate data collection, storage and processing practices and security measures to protect against unauthorized access, alteration, disclosure or destruction of your personal information, username, password, transaction information and data stored on our Site.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.30588235294117649" green="0.32941176470588235" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.30588235294117649" green="0.32941176470588235" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Sensitive and private data exchange between the Site and its Users happens over a SSL secured communication channel and is encrypted and protected with digital signatures.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.30588235294117649" green="0.32941176470588235" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Sharing your personal information">
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">We do not sell, trade, or rent Users personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners, trusted affiliates and advertisers for the purposes outlined above.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.30588235294117649" green="0.32941176470588235" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Changes to this privacy policy">
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Bryderi AB has the discretion to update this privacy policy at any time. When we do, we will post a notification on the main page of our Site, revise the updated date at the bottom of this page. We encourage Users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.30588235294117649" green="0.32941176470588235" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Your acceptance of these terms">
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">By using this Site, you signify your acceptance of this policy. If you do not agree to this policy, please do not use our Site. Your continued use of the Site following the posting of changes to this policy will be deemed your acceptance of those changes.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.30588235294117649" green="0.32941176470588235" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Contacting us">
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.29019607843137257" green="0.58823529411764708" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us at:
+Bryderi AB 
+Speedle.se
++46705460248
+info@speedle.se</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.30588235294117649" green="0.32941176470588235" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hU1-8c-xwt" firstAttribute="leading" secondItem="4EE-vZ-ZhV" secondAttribute="leading" constant="8" id="8mQ-Rw-ZL0"/>
+                            <constraint firstItem="hU1-8c-xwt" firstAttribute="top" secondItem="h8X-IJ-XNC" secondAttribute="bottom" id="aFJ-In-eJc"/>
+                            <constraint firstItem="jSW-Hm-i6C" firstAttribute="top" secondItem="hU1-8c-xwt" secondAttribute="bottom" id="bIg-CR-XLT"/>
+                            <constraint firstAttribute="trailing" secondItem="hU1-8c-xwt" secondAttribute="trailing" constant="8" id="hkF-rb-GXa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Privacy Policy" id="c8L-pJ-q4p"/>
+                    <connections>
+                        <outlet property="textView" destination="hU1-8c-xwt" id="3QW-AP-MhD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x67-PV-woT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3017" y="2813"/>
+        </scene>
+        <!--Personal Settings-->
+        <scene sceneID="K0e-Z0-NJl">
+            <objects>
+                <viewController id="NPh-tY-cqd" customClass="SLPersonalSettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FeZ-hJ-0Y3"/>
+                        <viewControllerLayoutGuide type="bottom" id="gf4-IO-gBV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fKR-3D-653">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Sai-b2-7Z6" customClass="SLTextField">
+                                <rect key="frame" x="15" y="20" width="570" height="35"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="lkk-Pt-XFA"/>
+                                </constraints>
+                                <color key="textColor" red="0.34901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="_layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="_isMandatory" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="NPh-tY-cqd" id="NGc-DB-FVh"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="585-uf-NTr" customClass="SLTextField">
+                                <rect key="frame" x="15" y="65" width="570" height="35"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="zhP-g2-4s6"/>
+                                </constraints>
+                                <color key="textColor" red="0.34901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="_layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="_isMandatory" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="NPh-tY-cqd" id="X50-l1-zsF"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3P9-jz-2eF" customClass="SLTextField">
+                                <rect key="frame" x="15" y="110" width="570" height="35"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="3Aa-Vd-apn"/>
+                                </constraints>
+                                <color key="textColor" red="0.34901960780000002" green="0.37647058820000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="_layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="_isMandatory" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="NPh-tY-cqd" id="qUT-kX-OIf"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3P9-jz-2eF" secondAttribute="trailing" constant="15" id="3fV-5g-tdf"/>
+                            <constraint firstItem="585-uf-NTr" firstAttribute="top" secondItem="Sai-b2-7Z6" secondAttribute="bottom" constant="10" id="BfH-g1-GNP"/>
+                            <constraint firstItem="3P9-jz-2eF" firstAttribute="leading" secondItem="fKR-3D-653" secondAttribute="leading" constant="15" id="Gro-CO-bzz"/>
+                            <constraint firstAttribute="trailing" secondItem="585-uf-NTr" secondAttribute="trailing" constant="15" id="VCg-84-Hfz"/>
+                            <constraint firstItem="585-uf-NTr" firstAttribute="leading" secondItem="fKR-3D-653" secondAttribute="leading" constant="15" id="cKP-dQ-41V"/>
+                            <constraint firstItem="Sai-b2-7Z6" firstAttribute="leading" secondItem="fKR-3D-653" secondAttribute="leading" constant="15" id="cj5-SJ-sA1"/>
+                            <constraint firstItem="3P9-jz-2eF" firstAttribute="top" secondItem="585-uf-NTr" secondAttribute="bottom" constant="10" id="is7-vm-KVC"/>
+                            <constraint firstAttribute="trailing" secondItem="Sai-b2-7Z6" secondAttribute="trailing" constant="15" id="lhL-KS-wNB"/>
+                            <constraint firstItem="Sai-b2-7Z6" firstAttribute="top" secondItem="FeZ-hJ-0Y3" secondAttribute="bottom" constant="20" id="vrM-Qo-LeJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Personal Settings" id="vHX-WK-1LZ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="jtA-38-wr1">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="NPh-tY-cqd" id="sOA-Tm-anS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="3P9-jz-2eF" id="lyp-cm-chx"/>
+                        <outlet property="nameTextField" destination="Sai-b2-7Z6" id="J1x-2G-JQI"/>
+                        <outlet property="phoneTextField" destination="585-uf-NTr" id="I5r-tr-dLc"/>
+                        <outlet property="saveButton" destination="jtA-38-wr1" id="ylM-MK-wb2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vsq-y7-LAX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3657" y="2813"/>
+        </scene>
+        <!--Before Post Preview View Controller-->
+        <scene sceneID="eMj-wZ-EAG">
+            <objects>
+                <viewController id="8np-Mb-rn2" customClass="SLBeforePostPreviewViewController" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccw-gX-o9B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-528" y="3039"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ad_radius_big" width="12" height="18"/>
+        <image name="ad_radius_small" width="9" height="14"/>
+        <image name="arrow_left-icon" width="12" height="20"/>
+        <image name="arrow_right-icon" width="12" height="20"/>
+        <image name="facebook-icon" width="20" height="20"/>
+        <image name="favorites-icon" width="26" height="23"/>
+        <image name="home-icon" width="24" height="23"/>
+        <image name="instagram-icon" width="20" height="20"/>
+        <image name="logo" width="165" height="155"/>
+        <image name="my_ads-icon" width="31" height="23"/>
+        <image name="new_ad-icon" width="31" height="23"/>
+        <image name="photo-icon" width="40" height="30"/>
+        <image name="settings-icon" width="23" height="23"/>
+        <image name="twitter-icon" width="20" height="20"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="CSF-ly-MG2"/>
+        <segue reference="Hm8-f2-ntC"/>
+        <segue reference="0e9-jl-VWe"/>
+        <segue reference="DtM-p4-Ko0"/>
+    </inferredMetricsTieBreakers>
+</document>

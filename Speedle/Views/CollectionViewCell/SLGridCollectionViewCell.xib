@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="kcd-GR-IvT" customClass="SLGridCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Og-Qd-yBm">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="haP-pC-8tt">
+                        <rect key="frame" x="0.0" y="125" width="150" height="25"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="Htx-SK-S8x">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.70000000000000007" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Htx-SK-S8x" firstAttribute="leading" secondItem="haP-pC-8tt" secondAttribute="leading" id="7KT-NA-moS"/>
+                            <constraint firstAttribute="trailing" secondItem="Htx-SK-S8x" secondAttribute="trailing" id="CkY-da-O6H"/>
+                            <constraint firstAttribute="height" constant="25" id="GFK-8P-BaA"/>
+                            <constraint firstAttribute="bottom" secondItem="Htx-SK-S8x" secondAttribute="bottom" id="hER-lc-5ya"/>
+                            <constraint firstItem="Htx-SK-S8x" firstAttribute="top" secondItem="haP-pC-8tt" secondAttribute="top" id="itf-wY-0NT"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUV-f7-2zw">
+                        <rect key="frame" x="110" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="sTQ-q8-xcP"/>
+                            <constraint firstAttribute="width" constant="40" id="yYf-I5-FrG"/>
+                        </constraints>
+                        <state key="normal" image="delet-icon">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="rightButtonPressed:" destination="kcd-GR-IvT" eventType="touchUpInside" id="EZS-M5-0IG"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucg-fo-QvW">
+                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="RkD-g0-HEf"/>
+                            <constraint firstAttribute="height" constant="40" id="VTY-BH-qZE"/>
+                        </constraints>
+                        <state key="normal" image="edit-icon">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="leftButtonPressed:" destination="kcd-GR-IvT" eventType="touchUpInside" id="Mlq-Vc-EeV"/>
+                        </connections>
+                    </button>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="ZaX-rZ-Iku">
+                        <rect key="frame" x="121" y="9" width="20" height="20"/>
+                    </activityIndicatorView>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="cBX-3h-rDb">
+                        <rect key="frame" x="65" y="65" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hUV-f7-2zw" firstAttribute="top" secondItem="kcd-GR-IvT" secondAttribute="top" id="1PE-iL-b3k"/>
+                <constraint firstItem="ucg-fo-QvW" firstAttribute="top" secondItem="kcd-GR-IvT" secondAttribute="top" id="9Vk-Kh-bNL"/>
+                <constraint firstAttribute="centerX" secondItem="cBX-3h-rDb" secondAttribute="centerX" id="HM4-DN-ko8"/>
+                <constraint firstAttribute="trailing" secondItem="hUV-f7-2zw" secondAttribute="trailing" id="Hfz-VY-jHX"/>
+                <constraint firstAttribute="centerY" secondItem="cBX-3h-rDb" secondAttribute="centerY" id="KPp-Hc-WvA"/>
+                <constraint firstAttribute="trailing" secondItem="ZaX-rZ-Iku" secondAttribute="trailing" constant="9" id="RhW-5k-BoL"/>
+                <constraint firstItem="0Og-Qd-yBm" firstAttribute="leading" secondItem="kcd-GR-IvT" secondAttribute="leading" id="RwX-f5-uDG"/>
+                <constraint firstItem="0Og-Qd-yBm" firstAttribute="top" secondItem="kcd-GR-IvT" secondAttribute="top" id="Shy-Ys-bBc"/>
+                <constraint firstAttribute="bottom" secondItem="0Og-Qd-yBm" secondAttribute="bottom" id="Vqp-mH-r4s"/>
+                <constraint firstItem="ucg-fo-QvW" firstAttribute="leading" secondItem="kcd-GR-IvT" secondAttribute="leading" id="aFI-tp-mYo"/>
+                <constraint firstAttribute="trailing" secondItem="0Og-Qd-yBm" secondAttribute="trailing" id="gTF-SD-Z33"/>
+                <constraint firstItem="ZaX-rZ-Iku" firstAttribute="top" secondItem="kcd-GR-IvT" secondAttribute="top" constant="9" id="i5x-Tq-2kz"/>
+                <constraint firstAttribute="bottom" secondItem="haP-pC-8tt" secondAttribute="bottom" id="kuQ-3S-X2L"/>
+                <constraint firstItem="haP-pC-8tt" firstAttribute="leading" secondItem="kcd-GR-IvT" secondAttribute="leading" id="mTh-XZ-IHm"/>
+                <constraint firstAttribute="trailing" secondItem="haP-pC-8tt" secondAttribute="trailing" id="zkn-CO-hnv"/>
+            </constraints>
+            <size key="customSize" width="162" height="160"/>
+            <connections>
+                <outlet property="currencyValueLabel" destination="Htx-SK-S8x" id="7SU-sQ-sXj"/>
+                <outlet property="favouriteActivityIndicator" destination="ZaX-rZ-Iku" id="hvI-pC-jEh"/>
+                <outlet property="imageView" destination="0Og-Qd-yBm" id="dmM-6g-jsM"/>
+                <outlet property="leftButton" destination="ucg-fo-QvW" id="bMa-Si-Qlr"/>
+                <outlet property="mainActivityIndicator" destination="cBX-3h-rDb" id="E2K-ga-PO6"/>
+                <outlet property="rightButton" destination="hUV-f7-2zw" id="eYL-eJ-bvh"/>
+            </connections>
+            <point key="canvasLocation" x="318" y="290"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="delet-icon" width="23" height="23"/>
+        <image name="edit-icon" width="23" height="23"/>
+    </resources>
+</document>

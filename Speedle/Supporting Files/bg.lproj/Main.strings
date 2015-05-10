@@ -1,0 +1,81 @@
+
+/* Class = "IBUILabel"; text = “Конфиденциалност”; ObjectID = "0RN-F1-pGW"; */
+"0RN-F1-pGW.text" = "Конфиденциалност";
+
+/* Class = "IBUITextField"; placeholder = “Имейл”; ObjectID = "3P9-jz-2eF"; */
+"3P9-jz-2eF.placeholder" = "Имейл";
+
+/* Class = "IBUITabBarItem"; title = “НАСТРОЙКИ”; ObjectID = "3mI-dS-8tZ"; */
+"3mI-dS-8tZ.title" = “НАСТРОЙКИ”;
+
+/* Class = "IBUITextField"; placeholder = “Телефон”; ObjectID = "585-uf-NTr"; */
+"585-uf-NTr.placeholder" = “Телефон”;
+
+/* Class = "IBUITabBarItem"; title = “ПРЕДПОЧИТАНИ”; ObjectID = "5zb-hf-FGK"; */
+"5zb-hf-FGK.title" = "ПРЕДПОЧИТАНИ";
+
+/* Class = "IBUILabel"; text = “Заглавие”; ObjectID = "6wK-ul-H7W"; */
+"6wK-ul-H7W.text" = "Заглавие";
+
+/* Class = "IBUIButton"; normalTitle = “Вход с Facebook”; ObjectID = "BFy-ik-akw"; */
+"BFy-ik-akw.normalTitle" = "Вход с Facebook";
+
+/* Class = "IBUINavigationItem"; title = “Категория”; ObjectID = "DPR-K6-ko2"; */
+"DPR-K6-ko2.title" = "Категория";
+
+/* Class = "IBUILabel"; text = “Моля, влезте в профила си, за да продължите!”; ObjectID = "EGF-BZ-kbo"; */
+"EGF-BZ-kbo.text" = "Моля, влезте в профила си, за да продължите!";
+
+/* Class = "IBUILabel"; text = “Лични настройки”; ObjectID = "EP6-Bc-Dhl"; */
+"EP6-Bc-Dhl.text" = "Лични настройки";
+
+/* Class = "IBUILabel"; text = “Радиус на обявата”; ObjectID = "LEj-iq-nKc"; */
+"LEj-iq-nKc.text" = "Радиус на обявата";
+
+/* Class = "IBUITabBarItem"; title = “НАЧАЛО”; ObjectID = "QtU-5t-z1t"; */
+"QtU-5t-z1t.title" = "НАЧАЛО";
+
+/* Class = "IBUITextField"; placeholder = “Име”; ObjectID = "Sai-b2-7Z6"; */
+"Sai-b2-7Z6.placeholder" = "Име";
+
+/* Class = "IBUILabel"; text = “Потребителско име”; ObjectID = "Tux-in-p2h"; */
+"Tux-in-p2h.text" = "Потребителско име";
+
+/* Class = "IBUILabel"; text = “Заглавие”; ObjectID = "YyN-mc-X3I"; */
+"YyN-mc-X3I.text" = "Заглавие";
+
+/* Class = "IBUINavigationItem"; title = “Конфиденциалност”; ObjectID = "c8L-pJ-q4p"; */
+"c8L-pJ-q4p.title" = "Конфиденциалност";
+
+/* Class = "IBUIButton"; normalTitle = “Вход с Twitter"; ObjectID = "c9f-rD-ROO"; */
+"c9f-rD-ROO.normalTitle" = "Вход с Twitter";
+
+/* Class = "IBUILabel"; text = “За апликацията”; ObjectID = "eKT-MQ-vRE"; */
+"eKT-MQ-vRE.text" = "За апликацията";
+
+/* Class = "IBUILabel"; text = "0.0 kм”; ObjectID = "fZW-DC-zy4"; */
+"fZW-DC-zy4.text" = "0.0 kм”;
+
+/* Class = "IBUITabBarItem"; title = “МОИТЕ ОБЯВИ”; ObjectID = "gtv-4B-8lS"; */
+"gtv-4B-8lS.title" = "МОИТЕ ОБЯВИ";
+
+/* Class = "IBUIButton"; normalTitle = “Вход с Instagram"; ObjectID = "iKM-Py-acT"; */
+"iKM-Py-acT.normalTitle" = "Вход с Instagram";
+
+/* Class = "IBUINavigationItem"; title = “Категория”; ObjectID = "kWb-ay-hCT"; */
+"kWb-ay-hCT.title" = "Категория";
+
+/* Class = "IBUILabel"; text = “Излез”; ObjectID = "kkW-Ld-dvE"; */
+"kkW-Ld-dvE.text" = "Излез";
+
+/* Class = "IBUISearchBar"; placeholder = “Потърси”; ObjectID = "ojk-J0-zDW"; */
+"ojk-J0-zDW.placeholder" = "Потърси";
+
+/* Class = "IBUITabBarItem"; title = “НОВА ОБЯВА“; ObjectID = "tMx-WO-YZM"; */
+"tMx-WO-YZM.title" = "НОВА ОБЯВА";
+
+/* Class = "IBUINavigationItem"; title = “Лични настройки”; ObjectID = "vHX-WK-1LZ"; */
+"vHX-WK-1LZ.title" = "Лични настройки";
+
+/* Class = "IBUINavigationItem"; title = “За апликацията”; ObjectID = "xgQ-Sp-fCa"; */
+"xgQ-Sp-fCa.title" = "За апликацията";
